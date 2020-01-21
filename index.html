@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/Styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <table class="cart">
+            <thead>
+                <tr>
+                <th>#</th>
+                <th>Product</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>    
+                </tr>            
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="buttons">
+            <div class="add">
+                <button class="add-btn">Add Row</button>
+            </div>
+            <div class="delete">
+                <button class="delete-btn">Delete Row</button>
+            </div>
+        </div>        
+    </div>
+    <div class="total-container">
+    <table class="total-cart">
+            <tr>
+                <td>SubTotal</td>
+                <td><input type='number' name='subtotal' disabled></td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>TaxAmount</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Grand Total</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>     
+    <script src='./assets/JS/variables.js'></script>
+    <script src='./assets/JS/addRow.js'></script>
+    <script src='./assets/JS/removeRow.js'></script>
+    <script src='./assets/JS/setupListeners.js'></script>
+    <script src='./assets/JS/calculations.js'></script>
+</body>
+</html>
